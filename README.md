@@ -1,14 +1,14 @@
 # Sales Summary Dashboard
 
-This is a single-page, responsive web application built with HTML, Tailwind CSS, and vanilla JavaScript. It fetches sales data from a local `data.csv` file, calculates the total sales, and displays it prominently on the dashboard.
+This is a single-page, responsive web application built with HTML, Tailwind CSS, and vanilla JavaScript. It fetches sales data from a local `data.csv` file, parses and displays all the data in a tabular format, and calculates the total sales.
 
 ## Features
 
 *   Fetches `data.csv` asynchronously.
-*   Parses CSV data to extract sales figures.
-*   Calculates the sum of all sales.
+*   Parses CSV data to extract all rows and columns.
+*   Dynamically renders a responsive HTML table to display all data.
+*   Calculates and prominently displays the sum of all sales.
 *   Dynamically updates the page title to "Sales Summary {Year}".
-*   Displays the total sales in a clean, user-friendly interface.
 *   Responsive design using Tailwind CSS.
 
 ## Getting Started
@@ -24,11 +24,11 @@ No specific software is required beyond a modern web browser.
 1.  **Save the files:** Ensure `index.html` and `data.csv` are in the same directory.
 2.  **Open `index.html`:** Simply open the `index.html` file in your web browser.
 
-The application will automatically fetch `data.csv`, process it, and display the total sales.
+The application will automatically fetch `data.csv`, process it, display the data in a table, and show the total sales.
 
 ## `data.csv` Format
 
-The `data.csv` file is expected to be a comma-separated values file with a header row. It **must** contain a column named `sales`.
+The `data.csv` file is expected to be a comma-separated values file with a header row. It **must** contain a column named `sales` for the total sales calculation to function correctly.
 
 Example `data.csv` structure:
 
